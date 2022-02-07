@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 * {
     padding: 0;
@@ -35,9 +36,13 @@ body, header, .top, ul, .banner, .description {
 }
 
 .quote {
+    display: flex;
+    flex-direction: column;
     height: 400px;
     background-color: #e5e7eb;
     border-radius: 25px;
+    align-items: center;
+    justify-content: center;
 }
 
 .information {
@@ -46,6 +51,7 @@ body, header, .top, ul, .banner, .description {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .cards {
@@ -54,11 +60,40 @@ body, header, .top, ul, .banner, .description {
     gap: 15px;
 }
 
+.contact, .contact-container {
+    display: flex;
+    height: 300px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.contact-container {
+    margin: 0 auto 0 auto;
+    gap: 15px;
+    padding: 0 20px 0 20px;
+    height: 40%;
+    background-color: #3882f6;
+    border-radius: 25px;
+    width: 100%;
+    justify-content: center;
+}
+
+img{
+    display: flex;
+    object-fit: contain;
+    height: 200px;
+    border-radius: 20px;
+}
+
+figcaption {
+    text-align: center;
+}
 
 /*------ HEADER ELEMENTS -------*/
 
 .nav-links {
     margin-left: auto;
+    margin-right: 0;
 }
 
 li {
@@ -86,6 +121,11 @@ li {
     display: flex;
     object-fit: contain;
     width: 50%;
+    margin-right: 0;
+}
+
+.top {
+    padding-top: 10px;
 }
 
 /*------ TEXT STYLING -------*/
@@ -112,14 +152,48 @@ li {
     font-weight: 800;
 }
 
+#quote {
+    font-family: 'Montserrat',sans-serif;
+    text-align: center;
+    font-style: italic;
+    font-size: 50px;
+}
+
+#author {
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.contact-txt h3 {
+    color: #f9faf8;
+}
+
+.contact-txt p {
+    color: #f9faf8be;
+}
+
+#copyright {
+    color: #f9faf8be;
+    text-align: center;
+    font-size: large;
+    padding-top: 15px;
+}
+
 /*------ BUTTON STYLING -------*/
 button {
-    align-self: flex-start;
     padding: 10px 20px;
     border-radius: 10px;
     background-color: #3882f6;
-    border: none;
     color: #e5e7eb;
     font-size: large;
     font-weight: bold;
+}
+
+.contact-btn1 {
+    align-self: flex-start;
+    border: none;
+}
+
+.contact-btn2 {
+    border: 1.5px solid white;
 }
